@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const HeroDupe= () => {
+const HeroDupe = () => {
   return (
-    <div className="relative w-full h-[600px]">
+    <div className="relative w-full h-[700px]">
       {/* Background Image */}
       <Image
-        src="/dupe.jpg" // 👈 put your image in /public as image.png
+        src="/nonchinese.png" // 👈 put your image in /public as image.png
         alt="Hero Image"
         fill
         className="object-cover"
@@ -13,7 +13,7 @@ const HeroDupe= () => {
       />
 
       {/* Left Text */}
-      <div className="absolute top-3 left-10 ">
+      <div className="absolute top-4 left-10 ">
         <h1 className="text-white text-5xl font-light leading-snug">
           Your Time is Valuable.
           <br />
@@ -26,9 +26,7 @@ const HeroDupe= () => {
         <div className="bg-transparent backdrop-blur-xl text-white p-6">
           <p className="text-sm">Up to</p>
           <p className="text-5xl font-light">40%</p>
-          <p className="text-sm mt-2">
-            of leaders’ time goes to strategy.
-          </p>
+          <p className="text-sm mt-2">of leaders’ time goes to strategy.</p>
         </div>
         <button className="w-full bg-lime-300 hover:bg-green-900 hover:text-white text-black text-sm py-3 px-4 flex justify-between items-center  transition">
           Let us optimize it for you

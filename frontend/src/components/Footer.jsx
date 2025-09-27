@@ -86,6 +86,21 @@ const Footer = () => {
           <a href="#">Privacy Policy</a>
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="mt-4 text-gray-400 text-xs max-w-7xl mx-auto px-2 text-center sm:text-left space-y-2">
+        <p>
+          <strong>Disclaimer:</strong> Ethice Capital is a registered
+          participant with
+          <strong> CBRICS & BSE (ICCL)</strong> and does not hold SEBI
+          registration. We do not offer investment advisory, broking, or
+          portfolio management services.
+        </p>
+        <p>
+          <strong>Depository Partner:</strong> SMC |{" "}
+          <strong>Banking Partner:</strong> ICICI Bank
+        </p>
+      </div>
     </footer>
   );
 };

@@ -1,4 +1,4 @@
-import { FiPhone, FiMapPin, FiArrowRight } from "react-icons/fi";
+import { FiPhone, FiMapPin, FiArrowRight, FiGlobe } from "react-icons/fi";
 
 const ContactCard = () => {
   return (
@@ -16,8 +16,7 @@ const ContactCard = () => {
           Have a Challenge or an Idea?
         </h3>
         <p className="text-sm leading-relaxed">
-          Fill out the form, and let’s talk about how we can support your
-          business with tailored solutions.
+          Fill up the form and Let's connect and exchange synergies !
         </p>
       </div>
 
@@ -27,12 +26,11 @@ const ContactCard = () => {
         <div className="flex items-center justify-between p-4 sm:p-5 cursor-pointer hover:bg-gray-50 transition-colors">
           <div className="flex items-center gap-3">
             <div className="bg-[#E8F3F2] p-3 rounded-md">
-              <FiPhone className="text-lg sm:text-xl text-[#173E3F]" />
+              <FiGlobe className="text-lg sm:text-xl text-[#173E3F]" />
             </div>
             <div>
-              <p className="text-xs sm:text-sm text-gray-700">Call us at:</p>
               <p className="text-sm sm:text-base font-semibold text-gray-900">
-                +91 8097072126
+                bonds@ethice.in
               </p>
             </div>
           </div>

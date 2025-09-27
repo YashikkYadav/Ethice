@@ -6,25 +6,41 @@ const services = [
     title: "Corporate Bond Trading",
     description: null,
     image: "/s1.svg",
-    list: ["Income Generation", "Capital Preservation", "Hedge Against Economic Slowdown"],
+    list: [
+      "Income Generation",
+      "Capital Preservation",
+      "Hedge Against Economic Slowdown",
+    ],
   },
   {
     title: "Government Securities",
     description: null,
     image: "/s2.svg",
-    list: ["Income Generation", "Capital Preservation", "Hedge Against Economic Slowdown"],
+    list: [
+      "Income Generation",
+      "Capital Preservation",
+      "Hedge Against Economic Slowdown",
+    ],
   },
   {
     title: "State Development Loans",
     description: null,
     image: "/s3.svg",
-    list: ["Income Generation", "Capital Preservation", "Hedge Against Economic Slowdown"],
+    list: [
+      "Income Generation",
+      "Capital Preservation",
+      "Hedge Against Economic Slowdown",
+    ],
   },
   {
     title: "Why Fixed Income?",
     description: null,
     image: "/s1.svg",
-    list: ["Income Generation", "Capital Preservation", "Hedge Against Economic Slowdown"],
+    list: [
+      "Income Generation",
+      "Capital Preservation",
+      "Hedge Against Economic Slowdown",
+    ],
   },
 ];
 
@@ -40,11 +56,11 @@ const WhatWeDo = () => {
         {/* Heading + Description */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-semibold text-black">
-            What We Do!
+            What we trade in
           </h2>
           <p className="text-gray-600 text-sm sm:text-base max-w-2xl">
-            We specialize in fixed-income securities to help you grow and preserve
-            your wealth strategically.
+            We Trade in Fixed-Income Securities to grow and preserve your wealth
+            strategically !
           </p>
         </div>
 
@@ -93,9 +109,9 @@ const WhatWeDo = () => {
                   </ul>
                 )}
 
-                <button className="mt-auto w-full bg-white hover:bg-green-900 hover:text-white border border-gray-200 text-sm text-black py-2 px-4 rounded-md flex justify-between items-center transition">
+                {/* <button className="mt-auto w-full bg-white hover:bg-green-900 hover:text-white border border-gray-200 text-sm text-black py-2 px-4 rounded-md flex justify-between items-center transition">
                   Learn More <FaArrowRight size={12} />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

@@ -61,9 +61,10 @@ const AboutUs = () => {
         {/* Row 3: Image + Card and Accordion */}
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Left: Image and Floating Card */}
+
           <div className="relative">
             <img
-              src="/aboutus.webp"
+              src="/image (1).png"
               alt="About Us"
               className="rounded-md w-[500px] h-auto object-cover"
             />
@@ -77,7 +78,9 @@ const AboutUs = () => {
                   className="w-[250px] h-26 object-contain"
                 />
               </div>
-              <h4 className="text-lg font-semibold mb-3">Data-driven Insights</h4>
+              <h4 className="text-lg font-semibold mb-3">
+                Data-driven Insights
+              </h4>
               <ul className="space-y-2 text-sm text-gray-800 mb-4">
                 <li className="flex items-start gap-2">
                   <FaCheck className="text-green-600 mt-1" />
@@ -89,7 +92,7 @@ const AboutUs = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <FaCheck className="text-green-600 mt-1" />
-                  Strategic guidance for 
+                  Strategic guidance for
                 </li>
               </ul>
               <button className="bg-green-900 hover:bg-green-800 text-white text-sm px-4 py-2 rounded flex items-center justify-between w-full transition">
@@ -106,7 +109,9 @@ const AboutUs = () => {
                   onClick={() => toggleAccordion(index)}
                   className="w-full flex items-center justify-between text-left px-4 py-4 hover:bg-gray-50 transition"
                 >
-                  <span className="font-medium text-gray-800">{item.title}</span>
+                  <span className="font-medium text-gray-800">
+                    {item.title}
+                  </span>
                   {activeIndex === index ? (
                     <FaMinus className="text-gray-600" />
                   ) : (
@@ -136,13 +141,12 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        
       </div>
       <div className="mt-10">
-          <button className="text-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">
-            About Us
-          </button>
-        </div>
+        <button className="text-sm bg-gray-100 text-gray-800 px-3 py-1 rounded">
+          About Us
+        </button>
+      </div>
     </section>
   );
 };

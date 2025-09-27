@@ -12,11 +12,11 @@ const ConsultationForm = () => {
   return (
     <div className="flex flex-col lg:flex-row font-sans bg-white mb-20 mt-10 lg:mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left Section */}
-      <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-start">
+      <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-start ">
         <img
-          src="/consult.jpg"
+          src="/image (4).png"
           alt="Consult"
-          className="w-full h-64 sm:h-80 lg:h-full lg:w-[650px] object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
+          className="w-full h-64 sm:h-80 lg:h-full lg:w-[900px] object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
         />
         {/* Overlay Card */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 w-[90%] sm:w-[70%] lg:w-auto">
@@ -29,8 +29,8 @@ const ConsultationForm = () => {
         {/* Header */}
         <div className="bg-[#0D3E3E] text-white p-4 sm:p-5 flex items-center justify-between">
           <h2 className="text-base sm:text-lg font-medium">
-            <span className="text-green-300 font-bold">E</span>xecor{" "}
-            Schedule a Free Consultation
+            <span className="text-green-300 font-bold">E</span>xecor Schedule a
+            Free Consultation
           </h2>
           <FaPaperPlane className="text-xl sm:text-2xl" />
         </div>

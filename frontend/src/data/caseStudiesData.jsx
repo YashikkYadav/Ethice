@@ -4,7 +4,7 @@ export const caseStudies = [
     title: "How We Helped a Retail Brand Increase Sales by 45%",
     description:
       "AI, automation, and shifting consumer behavior are shaping industries. Stay ahead with these key trends for 2024.",
-    image: "/insight3.webp",
+    image: "/image (a).png",
     opportunity: `A major retail brand was struggling with stagnant sales growth due to outdated marketing and customer engagement strategies. They needed a data-driven approach to reach and convert new customers.`,
     solution: `We implemented AI-powered customer segmentation and personalized marketing automation that dynamically adapts to shopper behavior, boosting engagement and conversion rates.`,
     impact: `Sales increased by 45% within six months, customer retention improved by 30%, and operational marketing costs decreased by 20%. The client gained competitive edge with actionable insights from AI-driven analytics.`,
@@ -42,8 +42,7 @@ export const caseStudies = [
   {
     id: 5,
     title: "Streamlining Operations for a Manufacturing Giant",
-    description:
-      "A case study on optimizing workflows to reduce costs by 20%.",
+    description: "A case study on optimizing workflows to reduce costs by 20%.",
     image: "/daniel.webp",
     opportunity: `A large manufacturing company wanted to cut operational costs without sacrificing quality or output.`,
     solution: `By deploying IoT sensors and AI-based predictive maintenance, we optimized workflows and reduced downtime.`,

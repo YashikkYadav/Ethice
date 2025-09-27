@@ -11,29 +11,59 @@ const SolutionsTabs = () => {
 
   const content = {
     revenue: {
-      title: "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
+      title:
+        "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
       strategies: [
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Pricing & Profitability Analysis", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Pricing & Profitability Analysis",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
       ],
-      image: "/right1.jpg", // Place in public/images
+      image: "/image (2).png", // Place in public/images
     },
     scaling: {
-      title: "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
+      title:
+        "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
       strategies: [
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Pricing & Profitability Analysis", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Pricing & Profitability Analysis",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
       ],
-      image: "/right1.jpg",
+      image: "/image (2).png",
     },
     competitors: {
-      title: "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
+      title:
+        "Quickly identify and resolve revenue blockers with a comprehensive business audit. We uncover hidden challenges and provide strategic solutions to restore growth.",
       strategies: [
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Pricing & Profitability Analysis", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
-        { heading: "Revenue Optimization Strategies", text: "Quickly identify and resolve revenue blockers with a comprehensive business audit." },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Pricing & Profitability Analysis",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
+        {
+          heading: "Revenue Optimization Strategies",
+          text: "Quickly identify and resolve revenue blockers with a comprehensive business audit.",
+        },
       ],
       image: "/images/strategy.jpg",
     },
@@ -43,8 +73,8 @@ const SolutionsTabs = () => {
 
   return (
     <div className="bg-white">
-<div className="bg-[url('/right.jpg')]  bg-center flex items-center justify-center text-white text-5xl h-64">
-
+      {/* <div className="bg-[url('/right.jpg')]  bg-center flex items-center justify-center text-white text-5xl h-64"> */}
+      <div className="bg-green-900 flex items-center justify-center text-white font-bold text-5xl h-56">
         Find the Right Solution
       </div>
 
@@ -82,7 +112,7 @@ const SolutionsTabs = () => {
         <div className="relative rounded-lg overflow-hidden shadow-lg">
           {/* If using Next.js */}
           <Image
-            src={content[activeTab].image}
+            src="/image (2).png"
             alt="Strategy"
             width={600}
             height={400}
