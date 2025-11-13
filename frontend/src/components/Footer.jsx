@@ -12,44 +12,20 @@ const Footer = () => {
   return (
     <footer className="bg-[#043c3a] text-white pt-16 pb-8 px-6 mt-0 relative z-10">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm">
         {/* Logo + Tagline */}
-        <div>
-          <h2 className="text-white text-2xl font-semibold mb-2">
-            <span className="text-green-400">E</span>thice
-          </h2>
-          <p className="text-gray-400">
-            Strategic <span className="text-green-400">Insights.</span> Lasting{" "}
-            <span className="text-green-400">Impact.</span>
-          </p>
+        <div className="flex flex-col items-start">
+          <img src="../Ethic Capital LOGO (1).png" alt="logo image" className="w-48 mb-4" />
         </div>
 
-        {/* Company Links */}
-        <div>
-          <h4 className="text-gray-400 mb-2 font-medium">Company</h4>
-          <ul className="space-y-2 text-white">
-            <li>Services</li>
-            <li>Case Studies</li>
-            <li>Blog</li>
-            <li>Contact us</li>
-          </ul>
-        </div>
-
-        {/* More Links */}
-        <div>
-          <h4 className="text-gray-400 mb-2 font-medium">About</h4>
-          <ul className="space-y-2 text-white">
-            <li>Team</li>
-            <li>Careers</li>
-            <li>Press Release</li>
-          </ul>
-        </div>
+        {/* Empty column for spacing on smaller screens */}
+        <div className="hidden sm:block"></div>
 
         {/* Contact Info */}
         <div>
           <h4 className="text-gray-400 mb-2 font-medium">Contact</h4>
-          <p className="mb-2">P: +91 80970 72126</p>
-          <p className="mb-4">E: info@execor.com</p>
+          {/* <p className="mb-2">P: +91 80970 72126</p> */}
+          <p className="mb-4">E: bonds@ethice.in</p>
           <h4 className="mb-2 font-medium">Address</h4>
           <p>
             shop No:03, Vithal Mandi Building, Station Road, Thane, Maharashtra
@@ -85,21 +61,6 @@ const Footer = () => {
           <a href="#">Terms & Conditions</a>
           <a href="#">Privacy Policy</a>
         </div>
-      </div>
-
-      {/* Disclaimer */}
-      <div className="mt-4 text-gray-400 text-xs max-w-7xl mx-auto px-2 text-center sm:text-left space-y-2">
-        <p>
-          <strong>Disclaimer:</strong> Ethice Capital is a registered
-          participant with
-          <strong> CBRICS & BSE (ICCL)</strong> and does not hold SEBI
-          registration. We do not offer investment advisory, broking, or
-          portfolio management services.
-        </p>
-        <p>
-          <strong>Depository Partner:</strong> SMC |{" "}
-          <strong>Banking Partner:</strong> ICICI Bank
-        </p>
       </div>
     </footer>
   );

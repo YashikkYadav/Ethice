@@ -7,9 +7,9 @@ const services = [
     description: null,
     image: "/s1.svg",
     list: [
-      "Income Generation",
-      "Capital Preservation",
-      "Hedge Against Economic Slowdown",
+      "Earn higher returns than traditional fixed deposits",
+      "Diversify portfolio with rated corporate bonds",
+      "Trade easily in secondary markets for liquidity",
     ],
   },
   {
@@ -17,9 +17,9 @@ const services = [
     description: null,
     image: "/s2.svg",
     list: [
-      "Income Generation",
-      "Capital Preservation",
-      "Hedge Against Economic Slowdown",
+      "Backed by the sovereign guarantee of the Government of India",
+      "Ideal for risk-averse investments seeking stable returns",
+      "Access to long-term investment options with regular interest income",
     ],
   },
   {
@@ -27,9 +27,9 @@ const services = [
     description: null,
     image: "/s3.svg",
     list: [
-      "Income Generation",
-      "Capital Preservation",
-      "Hedge Against Economic Slowdown",
+      "Issued by state governments with strong credit reliability",
+      "Attractive yields compared to central government securities",
+      "Support state infrastructure and development projects while investing safely",
     ],
   },
   {
@@ -37,9 +37,9 @@ const services = [
     description: null,
     image: "/s1.svg",
     list: [
-      "Income Generation",
-      "Capital Preservation",
-      "Hedge Against Economic Slowdown",
+      "Steady and predictable income through interest payments",
+      "Capital preservation with low market volatility",
+      "Balanced portfolio diversification against equity market risks",
     ],
   },
 ];
@@ -49,17 +49,14 @@ const WhatWeDo = () => {
     <section className="bg-white py-10 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Section Tag */}
-        <button className="text-xs sm:text-sm bg-gray-100 px-3 py-1.5 text-black rounded-md mb-4">
-          Our Services
-        </button>
 
         {/* Heading + Description */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-semibold text-black">
-            What we trade in
+            What we trade in !
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base max-w-2xl">
-            We Trade in Fixed-Income Securities to grow and preserve your wealth
+          <p className="text-gray-600 text-4xl sm:text-xl max-w-2xl font-bold">
+            We Trade in Fixed-Income Securities to grow and preserve wealth
             strategically !
           </p>
         </div>

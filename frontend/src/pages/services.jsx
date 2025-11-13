@@ -8,51 +8,51 @@ import AwardsSection from "@/components/awardSection";
 const servicesData = [
   {
     id: "business-consulting",
-    title: "Business Consulting",
+    title: "Corporate Bond Trading",
     description:
-      "We help organizations navigate complexity, identify growth opportunities, and build resilient strategies. Our business consultants work closely with you to optimize operations, improve decision-making, and drive sustainable success. Whether you’re scaling up, entering new markets, or undergoing change, we provide the clarity and expertise to move forward with confidence.",
+      "Invest in high-quality corporate bonds that offer higher returns compared to traditional savings instruments while maintaining stability and liquidity.",
     checkpoints: [
-      "Strategy development & growth",
-      "Market research & competitors",
-      "Risk management",
+      "Earn steady interest income with predictable returns",
+      "Diversify portfolio with investment-grade corporate bonds",
+      "Trade seamlessly in the secondary market for liquidity",
     ],
-    image: "/s1.jpg",
+    image: "/s4.jpg",
   },
   {
     id: "marketing-sales",
-    title: "Marketing & Sales",
+    title: "Government Securities",
     description:
-      "We develop data-driven marketing strategies and optimize sales processes to boost performance.",
+      "Backed by the Government of India, these securities provide the highest level of safety with stable and assured returns for conservative investors.",
     checkpoints: [
-      "Customer segmentation",
-      "Sales funnel optimization",
-      "Brand positioning",
+      "Sovereign-backed instruments ensuring maximum safety",
+      "Ideal for long-term, low-risk investment portfolios",
+      "Regular interest payouts with assured maturity value",
     ],
     image: "/s2.jpg",
   },
   {
     id: "operations-management",
-    title: "Operations Management",
+    title: "State Development Loans",
     description:
-      "We streamline operations, reduce costs, and enhance efficiency across your organization.",
+      "Issued by state governments to fund infrastructure and development projects, SDLs offer attractive yields with a similar safety profile as central government securities.",
     checkpoints: [
-      "Process automation",
-      "Cost reduction strategies",
-      "Efficiency tracking",
+      "Issued and guaranteed by state governments",
+      "Attractive yields compared to central government bonds",
+      "Support state-level infrastructure and development projects",
     ],
     image: "/s3.jpg",
   },
   {
     id: "talent-acquisition",
-    title: "Talent Acquisition",
+    title: "Why Fixed Income?",
     description:
-      "We find, attract, and retain top talent to help your business thrive.",
+      "Fixed income instruments are essential for portfolio stability, offering predictable cash flows and protection against market volatility.",
     checkpoints: [
-      "Talent sourcing",
-      "Interview process design",
-      "Employee retention plans",
+      "Stable and predictable income through interest payments",
+      "Preserves capital with lower market risk exposure",
+      "Balances portfolio diversification against equity fluctuations",
     ],
-    image: "/s4.jpg",
+    image: "/s1.jpg",
   },
 ];
 
@@ -152,11 +152,11 @@ export default function Services() {
           })}
         </div>
 
-        <AwardsSection />
+        {/* <AwardsSection /> */}
       </div>
 
       {/* Hero with Image */}
-      <div className="relative w-full h-[70vh] sm:h-screen overflow-hidden mb-10">
+      {/* <div className="relative w-full h-[70vh] sm:h-screen overflow-hidden mb-10">
         <img
           src="/video.jpg"
           alt="Hero Background"
@@ -171,9 +171,9 @@ export default function Services() {
             Contact Us →
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   );
 }

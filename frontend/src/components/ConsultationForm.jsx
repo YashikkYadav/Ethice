@@ -18,8 +18,8 @@ const ConsultationForm = () => {
           alt="Consult"
           className="w-full h-64 sm:h-80 lg:h-full lg:w-[900px] object-cover rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
         />
-        {/* Overlay Card */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 w-[90%] sm:w-[70%] lg:w-auto">
+        {/* Overlay Card - Hidden on smaller screens */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-6 w-[90%] sm:w-[70%] lg:w-auto hidden lg:block">
           <ContactCard />
         </div>
       </div>
@@ -29,8 +29,7 @@ const ConsultationForm = () => {
         {/* Header */}
         <div className="bg-[#0D3E3E] text-white p-4 sm:p-5 flex items-center justify-between">
           <h2 className="text-base sm:text-lg font-medium">
-            <span className="text-green-300 font-bold">E</span>xecor Schedule a
-            Free Consultation
+            <span className="text-green-300 font-bold">L</span>ets Connect !
           </h2>
           <FaPaperPlane className="text-xl sm:text-2xl" />
         </div>

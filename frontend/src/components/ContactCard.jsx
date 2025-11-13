@@ -1,4 +1,10 @@
-import { FiPhone, FiMapPin, FiArrowRight, FiGlobe } from "react-icons/fi";
+import {
+  FiPhone,
+  FiMapPin,
+  FiArrowRight,
+  FiGlobe,
+  FiMail,
+} from "react-icons/fi";
 
 const ContactCard = () => {
   return (
@@ -26,7 +32,7 @@ const ContactCard = () => {
         <div className="flex items-center justify-between p-4 sm:p-5 cursor-pointer hover:bg-gray-50 transition-colors">
           <div className="flex items-center gap-3">
             <div className="bg-[#E8F3F2] p-3 rounded-md">
-              <FiGlobe className="text-lg sm:text-xl text-[#173E3F]" />
+              <FiMail className="text-lg sm:text-xl text-[#173E3F]" />
             </div>
             <div>
               <p className="text-sm sm:text-base font-semibold text-gray-900">
