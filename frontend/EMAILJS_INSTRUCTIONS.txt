@@ -1,0 +1,18 @@
+EmailJS Setup Instructions:
+
+1. Sign up for EmailJS at https://www.emailjs.com/
+2. Create an Email Service (Gmail recommended)
+3. Create an Email Template with these variables:
+   - {{from_name}}
+   - {{from_email}}
+   - {{phone}}
+   - {{company}}
+   - {{job_title}}
+   - {{message}}
+   - {{to_email}}
+4. Get your Public Key from your EmailJS Account settings
+5. Update the .env.local file with your actual credentials:
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+6. Restart your development server and test the form

@@ -15,7 +15,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm">
         {/* Logo + Tagline */}
         <div className="flex flex-col items-start">
-          <img src="../Ethic Capital LOGO (1).png" alt="logo image" className="w-48 mb-4" />
+          <img
+            src="../Ethic Capital LOGO (1).png"
+            alt="logo image"
+            className="w-48 mb-4"
+          />
         </div>
 
         {/* Empty column for spacing on smaller screens */}

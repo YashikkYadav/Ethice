@@ -2,11 +2,37 @@ import React from "react";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 import { FaPaperPlane } from "react-icons/fa6";
+import emailjs from "@emailjs/browser";
 
 const ConsultationForm = () => {
   const handleFormSubmit = (data) => {
-    console.log("Form submitted:", data);
-    // integrate API call or email service here
+    // Prepare email template parameters
+    const templateParams = {
+      from_name: `${data.firstName} ${data.secondName}`,
+      from_email: data.email,
+      phone: data.phone,
+      company: data.company,
+      job_title: data.jobTitle,
+      message: data.message,
+      to_email: "ns17740654@gmail.com", // The recipient email
+    };
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        alert("Failed to send message. Please try again later.");
+      });
   };
 
   return (

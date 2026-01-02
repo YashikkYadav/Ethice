@@ -5,7 +5,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
-import ContactForm from "../components/ContactForm"; // adjust import path
+import ConsultationForm from "@/components/ConsultationForm";
 
 export default function ContactUs() {
   const contactCards = [
@@ -15,18 +15,46 @@ export default function ContactUs() {
       description:
         "shop No:03, Vithal Mandi Building, Station Road, Thane, Maharashtra,- 400 099",
     },
-    {
-      icon: <FaPhoneAlt size={22} />,
-      title: "Call us at:",
-      description: "+91 80970 72126",
-    },
+    // {
+    //   icon: <FaPhoneAlt size={22} />,
+    //   title: "Call us at:",
+    //   description: "+91 80970 72126",
+    // },
     {
       icon: <FaEnvelope size={22} />,
       title: "Email us at:",
       description: "bonds@ethice.in",
     },
   ];
+  const handleFormSubmit = (data) => {
+    // Prepare email template parameters
+    const templateParams = {
+      from_name: `${data.firstName} ${data.secondName}`,
+      from_email: data.email,
+      phone: data.phone,
+      company: data.company,
+      job_title: data.jobTitle,
+      message: data.message,
+      to_email: process.env.NEXT_PUBLIC_EMAILJS_RECIPIENT_EMAIL, // The recipient email
+    };
 
+    // Send email using EmailJS
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        alert("Failed to send message. Please try again later.");
+      });
+  };
   return (
     <div className="bg-white">
       {/* Heading */}
@@ -40,7 +68,7 @@ export default function ContactUs() {
       </section>
 
       {/* Contact Cards */}
-      <section className="py-10 px-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <section className="py-10 px-6 grid grid-cols-2 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {contactCards.map((card, idx) => (
           <div
             key={idx}
@@ -63,7 +91,7 @@ export default function ContactUs() {
       </section>
 
       {/* Form Section */}
-      <section className="py-10 px-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <section className="py-10 px-6 max-w-6xl mx-auto">
         {/* Left Content */}
 
         {/* Right Form */}
@@ -75,7 +103,11 @@ export default function ContactUs() {
             </span>
           </div>
           <div className="p-6">
-            <ContactForm />
+            <ConsultationForm
+              onSubmit={() => {
+                handleFormSubmit;
+              }}
+            />
           </div>
         </div>
       </section>
